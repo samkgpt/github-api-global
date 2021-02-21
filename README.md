@@ -2,8 +2,9 @@
 
 ![npm](https://img.shields.io/npm/v/github-api-global) [![Support Node of LTS](https://img.shields.io/badge/node-latest-brightgreen.svg)](https://nodejs.org/) [![dependencies Status](https://status.david-dm.org/gh/request/request.svg)](https://david-dm.org/request/request)
 
-> To create calls to get the data you need by using [GitHub API][github-docs]
-
+```bash
+To create calls to get the data you need by using [GitHub API][github-docs]
+```
 
 ## Installation
 
@@ -22,7 +23,7 @@ var { githubRequest } = require("github-api-global");
 ```javascript
 // To create calls to get the data you need by using GitHub Rest Api
 const options = {
-  token: "1e3ed294c3f7tce7btdcdg18t88d98b743f9ac48t135656",
+  token: "1e3ed294c3f7tce7btdb743f9135656", // To get token see link below
   method: "get", // As per request
   path: "/user/repos", // As per request
   // You can add body param as per gitHub api docs as per request method
@@ -58,6 +59,3 @@ Copyright &copy; 2021. S.Gupta
 [github-docs]: https://docs.github.com/en/rest/reference/repos
 [github-api]: https://developer.github.com/v3/
 [github-token]: https://github.com/settings/tokens/new
-[github-oauth2]: https://developer.github.com/v3/#oauth2-token-sent-in-a-header
-[github-user-agent]: https://developer.github.com/v3/#user-agent-required
-[github-rate-limit]: https://developer.github.com/v3/rate_limit/
