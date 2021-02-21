@@ -2,13 +2,13 @@
 
 /**
  * Import repositories functions
- * @Function githubData - Get all github api response
+ * @Function githubData - To make a github api request
  */
-let { githubData } = require("./lib");
+let { githubRequest } = require("./lib");
 
 /**
  * Exports imported GitHub functions
  */
 module.exports = {
-  githubData,
+  githubRequest,
 };

@@ -2,9 +2,8 @@
 
 ![npm](https://img.shields.io/npm/v/github-api-global) [![Support Node of LTS](https://img.shields.io/badge/node-latest-brightgreen.svg)](https://nodejs.org/) [![dependencies Status](https://status.david-dm.org/gh/request/request.svg)](https://david-dm.org/request/request)
 
-```bash
-To make a request to github by using gitHub api
-```
+> To create calls to get the data you need by using [GitHub API][github-docs]
+
 
 ## Installation
 
@@ -15,27 +14,36 @@ $ npm install github-api-global
 ## Usage
 
 ```javascript
-var { githubData } = require("github-api-global");
+var { githubRequest } = require("github-api-global");
 ```
 
-## GitHub Api Examples
+## GitHub Rest Api Request
 
 ```javascript
-// List all issues from a repository
+// To create calls to get the data you need by using GitHub Rest Api
 const options = {
   token: "1e3ed294c3f7tce7btdcdg18t88d98b743f9ac48t135656",
   method: "get", // As per request
-  path: "/user/repos", // As per request, Floww gitHub docs for path below
-  // You can add as much body param as per gitHub docs
+  path: "/user/repos", // As per request
+  // You can add body param as per gitHub api docs as per request method
   body: {
-    name: "",
-    description: "",
+    name: "name",
+    description: "description",
   },
 };
-console.log(githubData(options)); // returns <data>
+console.log( githubRequest(options) ); // returns <data>
+
+// More examples of GitHub api request - {}
+// GET /user/repos - List repositories for the authenticated user
+// POST /user/repos - Create a repository for the authenticated user
+// PATCH /repos/{owner}/{repo} - Update a repository
+// DELETE /repos/{owner}/{repo} - Delete a repository
+// GET /repos/{owner}/{repo}/issues - List repository issues
+// PATCH /repos/{owner}/{repo}/issues/{issue_number} - Update an issue
+// Etc as per GitHub REST API docs link below
 ```
 
-For more gethub api url pat and body options flow [github docs][github-docs].
+For more GetHub API method, path and body options flow [GitHub Rest Api Docs][github-docs].
 
 To [authenticate][github-oauth2] with GitHub, set the [`token`][github-token] option.
 
@@ -45,7 +53,7 @@ To [authenticate][github-oauth2] with GitHub, set the [`token`][github-token] op
 
 ## Copyright
 
-Copyright &copy; 2021. S.Gupta.
+Copyright &copy; 2021. S.Gupta
 
 [github-docs]: https://docs.github.com/en/rest/reference/repos
 [github-api]: https://developer.github.com/v3/
