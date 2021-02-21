@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/github-api-global) [![Support Node of LTS](https://img.shields.io/badge/node-latest-brightgreen.svg)](https://nodejs.org/) [![dependencies Status](https://status.david-dm.org/gh/request/request.svg)](https://david-dm.org/request/request)
 
 ```bash
-To create calls to get the data you need by using [GitHub API][github-docs]
+To create calls to get the data you need by using [GitHub Rest API][github-docs]
 ```
 
 ## Installation
@@ -26,13 +26,14 @@ const options = {
   token: "1e3ed294c3f7tce7btdb743f9135656", // To get token see link below
   method: "get", // As per request
   path: "/user/repos", // As per request
-  // You can add body param as per gitHub api docs as per request method
   body: {
     name: "name",
     description: "description",
+    // Add more body params from GitHub Api docs as per request method describe
   },
 };
-console.log( githubRequest(options) ); // returns <data>
+
+console.log( githubRequest(options) ); // returns <response_data>
 
 // More examples of GitHub api request - {}
 // GET /user/repos - List repositories for the authenticated user
