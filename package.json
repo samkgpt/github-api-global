@@ -1,0 +1,22 @@
+{
+  "name": "github-api-global",
+  "version": "1.0.0",
+  "description": "To make a request to github by using gitHub api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "S.Gupta",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:samkgpt/github-api-global.git"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "github-api"
+  ],
+  "dependencies": {
+    "https": "^1.0.0"
+  }
+}
