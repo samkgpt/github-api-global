@@ -2,9 +2,9 @@
 
 ![npm](https://img.shields.io/npm/v/github-api-global) [![Support Node of LTS](https://img.shields.io/badge/node-latest-brightgreen.svg)](https://nodejs.org/) [![dependencies Status](https://status.david-dm.org/gh/request/request.svg)](https://david-dm.org/request/request)
 
-```bash
+
 To create calls to get the data you need by using [GitHub Rest API][github-docs]
-```
+
 
 ## Installation
 
