@@ -59,3 +59,4 @@ Copyright &copy; 2021. S.Gupta
 [github-docs]: https://docs.github.com/en/rest/reference/repos
 [github-api]: https://developer.github.com/v3/
 [github-token]: https://github.com/settings/tokens/new
+[github-oauth2]: https://developer.github.com/v3/#oauth2-token-sent-in-a-header
