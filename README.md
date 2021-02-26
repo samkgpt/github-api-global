@@ -34,7 +34,7 @@ const options = {
 };
 
 (async () => {
-  console.log(await githubRequest(opts)); // returns <response_data>
+  console.log(await githubRequest(options)); // returns <response_data>
 })();
 
 // More examples of GitHub api request - {}
