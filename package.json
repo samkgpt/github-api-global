@@ -1,6 +1,6 @@
 {
   "name": "github-api-global",
-  "version": "0.0.1",
+  "version": "1.0.7",
   "description": "To create calls to get the data you need by using GitHub REST API",
   "main": "lib/index.js",
   "scripts": {
