@@ -15,7 +15,7 @@ $ npm install github-api-global
 ## Usage
 
 ```javascript
-var { githubRequest } = require("github-api-global");
+var githubRequest = require("github-api-global");
 ```
 
 ## GitHub Rest Api Request
@@ -25,15 +25,19 @@ var { githubRequest } = require("github-api-global");
 const options = {
   token: "1e3ed294c3f7tce7btdb743f9135656", // To get token see link below
   method: "get", // As per request
-  path: "/user/repos", // As per request
+  path: "/repos/{owner}/{repo}/issues", // As per request, user or owner
   body: {
     name: "name",
     description: "description",
+    state: "open",
+    labels: ["bug", "dev"],
     // Add more body params from GitHub Api docs as per request method describe
   },
 };
 
-console.log( githubRequest(options) ); // returns <response_data>
+(async () => {
+  console.log(await githubRequest(opts)); // returns <response_data>
+})();
 
 // More examples of GitHub api request - {}
 // GET /user/repos - List repositories for the authenticated user
