@@ -45,9 +45,9 @@ const options = {
 // GET /repos/{owner}/{repo}/issues - List repository issues
 // POST /repos/{owner}/{repo}/issues - Create an issue
 // PATCH /repos/{owner}/{repo}/issues/{issue_number} - Update an issue
-// GET /repos/{owner}/{repo}/issues/{issue_number}/comments -List issue comments
+// GET /repos/{owner}/{repo}/issues/{issue_number}/comments -Issue comments
 // POST /repos/{owner}/{repo}/issues/{issue_number}/comments -Create an comment
-// PATCH /repos/{owner}/{repo}/issues/comments/{comment_id} -Update issue comment
+// PATCH /repos/{owner}/{repo}/issues/comments/{comment_id} -Update an comment
 // ETC as per GitHub REST API docs link below
 ```
 
