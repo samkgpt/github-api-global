@@ -1,8 +1,8 @@
 {
   "name": "github-api-global",
-  "version": "1.0.6",
+  "version": "0.0.1",
   "description": "To create calls to get the data you need by using GitHub REST API",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
