@@ -25,7 +25,7 @@ var githubRequest = require("github-api-global");
 const options = {
   token: "1e3ed294c3f7tce7btdb743f9135656", // To get token see link below
   method: "get", // As per request
-  path: "/repos/{owner}/{repo}/issues", // As per request, user or owner
+  path: "/repos/{owner}/{repo}/issues", // As per request, owner or user 
   body: {
     name: "name",
     description: "description",
@@ -44,8 +44,21 @@ const options = {
 // POST /user/repos - Create a repository for the authenticated user
 // PATCH /repos/{owner}/{repo} - Update a repository
 // DELETE /repos/{owner}/{repo} - Delete a repository
+```
+```
+List issues docs [GitHubissue comments docs][github-issue]
+```
+```javascript
 // GET /repos/{owner}/{repo}/issues - List repository issues
 // PATCH /repos/{owner}/{repo}/issues/{issue_number} - Update an issue
+```
+```
+List issue comments docs [GitHubissue comments docs][github-comments-docs]
+```
+```javascript
+// GET /repos/{owner}/{repo}/issues/{issue_number}/comments - List issue comments
+// POST /repos/{owner}/{repo}/issues/{issue_number}/comments - Create an issue comment
+// PATCH /repos/{owner}/{repo}/issues/comments/{comment_id} - Update an issue comment
 // Etc as per GitHub REST API docs link below
 ```
 
@@ -65,3 +78,5 @@ Copyright &copy; 2021. S.Gupta
 [github-api]: https://developer.github.com/v3/
 [github-token]: https://github.com/settings/tokens/new
 [github-oauth2]: https://developer.github.com/v3/#oauth2-token-sent-in-a-header
+[github-comments-docs]: https://docs.github.com/en/rest/reference/issues#comments
+[github-issue]: https://docs.github.com/en/rest/reference/issues
