@@ -44,22 +44,13 @@ const options = {
 // POST /user/repos - Create a repository for the authenticated user
 // PATCH /repos/{owner}/{repo} - Update a repository
 // DELETE /repos/{owner}/{repo} - Delete a repository
-```
-```
-List issues docs [GitHubissue comments docs][github-issue]
-```
-```javascript
 // GET /repos/{owner}/{repo}/issues - List repository issues
+// POST /repos/{owner}/{repo}/issues - Create an issue
 // PATCH /repos/{owner}/{repo}/issues/{issue_number} - Update an issue
-```
-```
-List issue comments docs [GitHubissue comments docs][github-comments-docs]
-```
-```javascript
 // GET /repos/{owner}/{repo}/issues/{issue_number}/comments - List issue comments
 // POST /repos/{owner}/{repo}/issues/{issue_number}/comments - Create an issue comment
 // PATCH /repos/{owner}/{repo}/issues/comments/{comment_id} - Update an issue comment
-// Etc as per GitHub REST API docs link below
+// ETC as per GitHub REST API docs link below
 ```
 
 For more GetHub API method, path and body options flow [GitHub Rest Api Docs][github-docs].
@@ -78,5 +69,3 @@ Copyright &copy; 2021. S.Gupta
 [github-api]: https://developer.github.com/v3/
 [github-token]: https://github.com/settings/tokens/new
 [github-oauth2]: https://developer.github.com/v3/#oauth2-token-sent-in-a-header
-[github-comments-docs]: https://docs.github.com/en/rest/reference/issues#comments
-[github-issue]: https://docs.github.com/en/rest/reference/issues
