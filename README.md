@@ -51,7 +51,7 @@ const options = {
 // ETC as per GitHub REST API docs link below
 ```
 
-For more GetHub API method, path and body options flow [GitHub Rest Api Docs][github-docs].
+For more GetHub API method, path, body options follow [GitHub Rest Api Docs][github-docs].
 
 To [authenticate][github-oauth2] with GitHub, set the [`token`][github-token] option.
 
