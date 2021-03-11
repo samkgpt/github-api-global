@@ -22,9 +22,23 @@ const options = {
   },
 };
 
+// request
 (async () => {
   console.log(await githubRequest(options)); // returns <response_data>
 })();
+
+// examples of GitHub api request
+// GET /user/repos - List repositories for the authenticated user
+// POST /user/repos - Create a repository for the authenticated user
+// PATCH /repos/{owner}/{repo} - Update a repository
+// DELETE /repos/{owner}/{repo} - Delete a repository
+// GET /repos/{owner}/{repo}/issues - List repository issues
+// POST /repos/{owner}/{repo}/issues - Create an issue
+// PATCH /repos/{owner}/{repo}/issues/{issue_number} - Update an issue
+// GET /repos/{owner}/{repo}/issues/{issue_number}/comments -Issue comments
+// POST /repos/{owner}/{repo}/issues/{issue_number}/comments -Create an comment
+// PATCH /repos/{owner}/{repo}/issues/comments/{comment_id} -Update an comment
+// ETC as per GitHub REST API docs link below
 ```
 */
 
